@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f3ef">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="app">
+      <!-- The header introduces the app and its purpose. -->
+      <header class="app-header">
+        <p class="eyebrow">A little more focus</p>
+        <h1>Task Manager</h1>
+        <p class="intro">Make space for what matters today.</p>
+      </header>
+
+      <!-- The form collects a task; the list below is filled in by JavaScript. -->
+      <section class="task-panel" aria-labelledby="tasks-heading">
+        <h2 id="tasks-heading">Your tasks</h2>
+        <form class="task-form" id="task-form">
+          <label class="visually-hidden" for="task-input">New task</label>
+          <input
+            id="task-input"
+            name="task"
+            type="text"
+            placeholder="What needs to get done?"
+            autocomplete="off"
+            required
+          >
+          <button type="submit">
+            <span aria-hidden="true">+</span>
+            Add
+          </button>
+        </form>
+
+        <ul class="task-list" id="task-list" aria-live="polite"></ul>
+        <p class="empty-state" id="empty-state">Your list is clear. Add a task to get started.</p>
+      </section>
+    </main>
+  </body>
+</html>
