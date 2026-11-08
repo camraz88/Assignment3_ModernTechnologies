@@ -1,0 +1,2 @@
+I’m building a task manager web app using plain HTML, CSS, and JavaScript with no frameworks. I have empty index.html, style.css, and script.js files. Create the basic structure: a header with the app name, an input field and “Add” button for new tasks, and an empty list where tasks will appear. Link the CSS and JS files. Use a clean, modern design with a soft neutral color palette. Add comments explaining the structure.
+
