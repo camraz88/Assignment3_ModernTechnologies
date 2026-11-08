@@ -12,7 +12,12 @@
     <main class="app">
       <!-- The header introduces the app and its purpose. -->
       <header class="app-header">
-        <p class="eyebrow">A little more focus</p>
+        <div class="header-top">
+          <p class="eyebrow">A little more focus</p>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">
+            Dark mode
+          </button>
+        </div>
         <h1>Task Manager</h1>
         <p class="intro">Make space for what matters today.</p>
       </header>
@@ -30,11 +35,23 @@
             autocomplete="off"
             required
           >
+          <label class="visually-hidden" for="task-priority">Task priority</label>
+          <select id="task-priority" name="priority">
+            <option value="low">Low priority</option>
+            <option value="medium" selected>Medium priority</option>
+            <option value="high">High priority</option>
+          </select>
           <button type="submit">
             <span aria-hidden="true">+</span>
             Add
           </button>
         </form>
+
+        <nav class="task-filters" aria-label="Filter tasks">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="active" aria-pressed="false">Active</button>
+          <button type="button" data-filter="completed" aria-pressed="false">Completed</button>
+        </nav>
 
         <ul class="task-list" id="task-list" aria-live="polite"></ul>
         <p class="empty-state" id="empty-state">Your list is clear. Add a task to get started.</p>
