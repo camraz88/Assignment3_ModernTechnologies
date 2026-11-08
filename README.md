@@ -43,9 +43,9 @@ Open `index.html` in a browser. No dependencies or setup are required.
 
 ## Screenshots
 
-![Task manager homepage](images/app-homepage.png)
+![Task manager homepage](images/Homepage.png)
 
-![Completed tasks](images/app-completed-tasks.png)
+![Completed tasks](images/Task list Checked.png)
 
 ## Built with AI
 

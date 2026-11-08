@@ -1,0 +1,9 @@
+1. I built a task manager web app with plain HTML, CSS and Javascript. I chose this stack because it goes along with my portfolio website project I worked on last semester. Before starting I used Claude to help me plan on prompts and it helped me split the work into three phases. Starting with the Website layout and structure, next was the basic features and lastly were adding extra features like dark mode, editting tasks, filtering and low, medium, and high priority rating. I then ran this all through Copilot's Agent mode sending each prompt one at a time and testing after each prompt.
+
+2. My first prompt was one detailed reuqest covering my stack, the layout, the design and asked it to explain why this. Once that worked I starting mixing multiple prompts into one message to save chats and keeping it under the free chat limit. That did go against the advice to build one feature at a time but it worked because each prompt was specific. I also saw that setting boundaries works like when I said "Don't change the HTML or CSS" Copilot only updated "script.js".
+
+3. The speed was one of the most suprising things to me. The build itself probably took about 30 minutes. Agent mode also tested its own work in the browser and was honest that it could not run a JavaScript syntax check because Node.js isn't installed. It even took care of a edge case that I didn't ask about by giving exisiting taks a default medium priority. The only error was a console message about a missing favicon 404.
+
+4. I learned how "localstorage" lets a browser save data so tasks and the dark mode setting survive a refresh without a server. I also learned how to use the browser console to tell a real error from a harmless warning. Another thing I took away from this is AI generated code can look correct and still need review for issues like XSS.
+
+5. I would build one feature at a time on projects so bugs are easier to trace if I were gonna build this again.
